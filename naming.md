@@ -47,3 +47,14 @@ const element = 'element'
   - returns, preserves
 
 https://soojin.ro/blog/naming-boolean-variables
+
+- boolean type에서는 부정형을 사용하지 말자.
+
+
+### 함수
+- 함수는 동작이니 현재형 동사로 시작해야 한다.
+- 함수를 호출하는거는 명령을 내리는 것으로 이해하자.
+- 동사를 겹쳐 쓰지 않도록 하자.
+- 단어가 가지는 어감을 유의해서 사용하자.
+  - update, change, modify, apply 등 비슷하지만 다른..
+  
