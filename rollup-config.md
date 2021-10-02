@@ -50,3 +50,9 @@ output: {
 ```
 
 - postcss의 public path 설정이 잘 안되서.. 일단 직접 수정해주었다.
+  - style href path 설정이 안되는 듯 하여 그냥 head에 style로 들어가는 방식으로 변경
+    ```
+    {
+      exec: true
+    }
+    ```
