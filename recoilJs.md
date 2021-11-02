@@ -8,6 +8,7 @@
 - 역호환성 방식으로 전체 애플리케이션 상태를 유지하는 것은 쉬우므로, 유지된 상태는 애플리케이션 변경에도 살아남을 수 있다.
 
 #### 주요 개념
+- https://recoiljs.org/ko/docs/introduction/core-concepts/
 - atoms -> selectors
 
 ##### Atoms
@@ -36,3 +37,33 @@ function FontButton() {
 
 ##### Selectors
 - atoms, selectors를 입력으로 받아들이는 순수 함수
+- 컴포넌트의 관점에서는 atoms와 동일한 인터페이스를 가지므로 대체 가능하다.
+```
+const fontSizeLabelState = selector({
+  key: 'fontSizeLabelState',
+  get: ({get}) => {
+    const fontSize = get(fontSizeState);
+    const unit = 'px';
+
+    return `${fontSize}${unit}`;
+  },
+});
+```
+- `fontSizeState` 라는 atom에 의존성을 가진다.
+```
+function FontButton() {
+  const [fontSize, setFontSize] = useRecoilState(fontSizeState);
+  const fontSizeLabel = useRecoilValue(fontSizeLabelState);
+
+  return (
+    <>
+      <div>Current font size: ${fontSizeLabel}</div>
+
+      <button onClick={setFontSize(fontSize + 1)} style={{fontSize}}>
+        Click to Enlarge
+      </button>
+    </>
+  );
+}
+```
+- Selectors는 `useRecoilValue()`를 사용해 읽을 수 있다.
