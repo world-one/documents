@@ -9,3 +9,11 @@ git reset --hard commitId
 git push -f origin main
 ```
 force는 굉장히 위험하지만 개인 저장소라서 사용해보았다.
+
+
+#### merge가 끝난 branch 삭제
+```
+alias git-clear='git fetch -p && git branch --merged 
+| grep -v "\*" | grep -v master 
+| grep -v develop | xargs -n 1 git branch -d'
+```
