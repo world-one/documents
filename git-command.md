@@ -25,3 +25,10 @@ git log
 // 가장 최신 commit 변경
 git commit --ament --no-edit --date "May 2 11:23:12 2021 +0900"
 ```
+
+### git reset, revert
+```
+git revert <commit hash>
+git reset <commit hash>
+```
+8월 11일 커밋 안한 곳으로 날짜 변경 후 커밋을 되돌리거나 삭제했는데 기록이 남아있음..
