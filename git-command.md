@@ -17,3 +17,11 @@ alias git-clear='git fetch -p && git branch --merged
 | grep -v "\*" | grep -v master 
 | grep -v develop | xargs -n 1 git branch -d'
 ```
+
+#### commit 날짜 변경
+```
+git log
+
+// 가장 최신 commit 변경
+git commit --ament --no-edit --date "May 2 11:23:12 2021 +0900"
+```
