@@ -32,3 +32,13 @@ git revert <commit hash>
 git reset <commit hash>
 ```
 8월 11일 커밋 안한 곳으로 날짜 변경 후 커밋을 되돌리거나 삭제했는데 기록이 남아있음..
+
+
+### mac git install
+```
+$ brew install git
+$ brew info git
+$ git --version
+$ echo "export PATH=/usr/local/bin:$PATH" >> ~/.bash_profile
+$ git --version
+```
