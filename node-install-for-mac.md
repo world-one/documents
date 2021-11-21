@@ -25,3 +25,7 @@ nvm ls
 nvm use [ version ]
 nvm alias default 13.10.1
 ```
+
+```
+nvm ls-remote --lts
+```
