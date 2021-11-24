@@ -238,6 +238,8 @@
   - 8.3 문장을 함수로 옮기기 (Move Statements into Function)
   - 8.4 문장을 호출한 곳으로 옮기기 (Move Statements to Callers)
   - 8.5 인라인 코드를 함수 호출로 바꾸기 (Replace Inline Code with Function Call)
+  - 8.6 문장 슬라이드하기 (Slide Statements)
+    - 관련된 코드들이 가까이 모여 있다면 이해하기가 더 쉽다.
 9. 데이터 조직화
 10. 조건부 로직 간소화
 11. API 리팩터링
