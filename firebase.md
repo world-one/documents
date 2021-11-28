@@ -29,5 +29,9 @@ Action deploys
     - github deploy를 위해 새로운 저장소를 추가했다.
 4. firebase deploy
   - Console에서 확인해보니 배포가 완료되었고, 연결된 사이트도 제대로 보인다.
-
-  
+5. github action
+  - github에 push하면 아래와 같은 에러 발생하였으나 github access tokne에서 workflow 권한을 추가해주면 문제없이 push 된다.
+  ```
+  refusing to allow a Personal Access Token to create or update workflow 
+  ```
+  - 배포 완료
