@@ -260,5 +260,12 @@
   - 9.6 매직 리터럴 바꾸기 (Replace Magic Literal)
     - 리터럴 값들을 의미를 알 수 있게 상수로 선언한다.
 10. 조건부 로직 간소화
+  - 10.1 조건문 분해하기 (Decompose Conditional)
+    - 조건식과 그 조건식에 딸린 조건절 각각을 함수로 추출한다.
+    - 취향에 따라 3항 연산자로 바꿔준다.
+  - 10.2 조건식 통합하기 (Consolidate Conditional Expression)
+    - 결과로 수행하는 동작은 똑같은 코드들은 하나로 통합한다.
+    - 진짜 독립된 검사라면 하지 않는다.
+  - 10.3 중첩 조건문을 보호 구문으로 바꾸기 (Replace Nested Conditional with Guard Clauses)
 11. API 리팩터링
 12. 상속 다루기
