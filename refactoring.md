@@ -267,5 +267,8 @@
     - 결과로 수행하는 동작은 똑같은 코드들은 하나로 통합한다.
     - 진짜 독립된 검사라면 하지 않는다.
   - 10.3 중첩 조건문을 보호 구문으로 바꾸기 (Replace Nested Conditional with Guard Clauses)
+  - 10.4 조건부 로직을 다형성으로 바꾸기 (Replace Conditional with Polymorphism)
+    - 클래스와 다형성을 이용한 분리
+    - 변형 동작을 다형성으로 표현하기
 11. API 리팩터링
 12. 상속 다루기
