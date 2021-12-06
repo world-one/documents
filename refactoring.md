@@ -277,4 +277,8 @@
   - 10.7 제어 플래그를 탈출문으로 바꾸기 (Replace Control Flag with Break)
     - 제어 플래그: 코드의 동작을 변경하는 데 사용되는 변수
 11. API 리팩터링
+  - 11.1 질의 함수와 변경 함수 분리하기 (Separate Query form Modifier)
+    - 상태를 변경하는 부분과 질의하는 부분을 분리
+  - 11.2 함수 매개변수화하기 (Parameterize Function)
+    - 다른 값만 매개변수로 받아 처리하는 함수로 만들기
 12. 상속 다루기
