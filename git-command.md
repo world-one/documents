@@ -42,3 +42,8 @@ $ git --version
 $ echo "export PATH=/usr/local/bin:$PATH" >> ~/.bash_profile
 $ git --version
 ```
+
+### git rebase를 관련 메시지
+`git status`를 하니 rebase를 진행중이라는 메시지가 떠서 잠깐 삽질..   
+rebase에 대한 이해가 좀 부족했음,
+`git rebase --abort`로 되돌린 후 관련 메시지는 사라짐
