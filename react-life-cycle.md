@@ -32,3 +32,9 @@
 - componentWillMount
 - componentWillUpdate
 - componentWillReceiveProps
+
+
+### function
+#### useEffect
+- componentDidMount, componentDidUpdate의 역할
+- return으로 componentWillUnmount 역할
