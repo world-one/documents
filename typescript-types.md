@@ -17,3 +17,10 @@ interface PropTypes extends MapStateTypes, MyInfoTypes{
 
 }
 ```
+
+
+### Type Guard
+- typeof
+- instanceof
+- in
+- 사용자가 정의하는 방법
