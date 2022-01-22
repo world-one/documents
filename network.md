@@ -34,3 +34,31 @@
 
 ### 네트워크 규칙
     - 프로토콜: 통신하기 위한 규칙
+
+### OSI 모델, TCP/IP 모델
+- 통신 규격
+- 국제표준화기구 ISO(International Organization for Standardization)
+    - OSI 모델이라는 표준 규격을 제정
+#### OSI 모델
+- 7계층
+    - 응용 계층(Application Layer)
+    - 이메일 & 파일 전송, 웹 사이트 조회
+- 6계층
+    - 표현 계층(Presentation Layer)
+    - 문자 코드, 압축, 암호화 등의 데이터 변환
+- 5계층
+    - 세션 계층(Session Layer)
+    - 세션 체결, 통신방식 결정
+- 4계층
+    - 전송 계층(Transport Layer)
+    - 신뢰할 수 있는 통신 구현
+- 3계층
+    - 네트워크 계층(Network Layer)
+    - 다른 네트워크와 통신하기 위한 경로 설정 및 논리 주소 결정
+- 2계층
+    - 데이터 링크 계층(Data Link Layer)
+    - 네트워크 기기 간의 데이터 전송 및 물리 주소 결정
+- 1계층
+    - 물리 계층(Physical Layer)
+    - 시스템 간의 물리적인 연결과 전기 신호를 변환 및 제어
+
