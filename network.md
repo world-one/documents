@@ -62,3 +62,13 @@
     - 물리 계층(Physical Layer)
     - 시스템 간의 물리적인 연결과 전기 신호를 변환 및 제어
 
+#### TCP/IP 모델
+- 4계층
+    - 응용 계층(Application Layer)
+- 3계층
+    - 전송 계층(Transport Layer)
+- 2계층
+    - 인터넷 계층(Internet Layer)
+- 1계층
+    - 네트워크 접속 계층(Network Access Layer)
+    - Host-to-Network
