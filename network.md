@@ -182,3 +182,13 @@
 #### ARP
 - Address Resolution Protocol
 - 목적지 컴퓨터의 IP 주소를 이용하여 MAC 주소를 찾기 위한 프로토콜
+
+### 이더넷 규격
+- 10BASE5
+    - 하이픈 없을 경우 케이블의 최대 길이, 5는 500미터
+- 10BASE2
+- 10BASE-T
+- 100BASE-TX
+- 1000BASE-T
+- 10GBASE-T
+- 10: 통신속도, BASE: 전송 방식, -T: 케이블
