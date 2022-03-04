@@ -35,3 +35,16 @@ Action deploys
   refusing to allow a Personal Access Token to create or update workflow 
   ```
   - 배포 완료
+
+
+### Authentication
+### Firestore Database
+- 실시간 업데이트, 쿼리, 자동 확장
+- 데이터 동기화 유지
+- 오프라인 지원 제공, 네트워크 지연이나 인터넷 연결에 상관없이 원활하게 반응하는 앱 개발
+- SDK를 통해 직접 접근 가능
+### Realtime Database
+### Storage
+### Hosting
+### Functions
+### Machine Learning
