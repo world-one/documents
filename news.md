@@ -26,3 +26,13 @@
 웹 3.0
 블록체인
     - Rust, Go, Solidity
+
+
+
+## 2022-04-03
+- chrominum
+  - 엣지, 브레이브, 삼성 인터넷, 웨일 등
+  - chrome zero day exploit
+  - https://threatpost.com/google-chrome-bug-actively-exploited-zero-day/179161/
+  - 현재는 구글에서 모든 세부 사항을 비밀로 하고 있음
+  - 취약한 버전: 99.0.4844.84 이 보다 높은 버전으로 업데이트 할 것
