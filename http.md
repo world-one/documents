@@ -1,5 +1,22 @@
-### http3?
+### HTTP/1
+- 연결당 하나의 요청을 처리
+- 동시 전송이 불가능하며 요청과 응답이 순차적으로 이뤄진다.
+- 전송 받지 못할 경우 재요청하여 전체 데이터를 받아와서 신뢰성을 높이지만 그 만큼 통신 지연이 발생한다.
 
+### HTTP/1.1
+- Keep-alive 기능 추가, 한 번 맺어졌던 연결을 끊지 않고 지속적으로 유지하여 불필요한 핸드 셰이크를 줄여준다.
+- HOL: 먼저 받은 요청이 끝나지 않으면 그 뒤에 있는 요청의 처리가 빨리 끝나더라도 앞선 요청을 기다려야한다.
+- 헤더에 많은 메타정보들이 저장되어 중복된 값을 전송하게 되며 무겁다.
+
+### HTTP/2
+- SPDY가 프로토콜로 채택되어 2015년에 공식적으로 발행
+- 멀티플렉스 스트림(Multiplexed Streams)
+  - 한 커넥션으로 동시에 여러 개의 메시지를 주고 받을 수 있다.
+  - 응답은 순서에 상관없이 stream으로 주고 받는다.
+- Connection Keep-Alive, Pipelining 개선
+- TCP를 사용하기 때문에 여전히 핸드셰이크의 RTT로 인한 Latency, HOLB 문제는 여전하다.
+
+### HTTP/3
 hamadevelop.me/http3/?fbclid=IwAR2JbkddmaZPnhZyRhdp9Y-yaVZxrtooaAVba_dW-j6vBMqjJy5cz4BVYlA   
 아래 내용은 위 블로그 내용을 읽고 중요 내용을 적어둔 것입니다.
 
@@ -19,3 +36,8 @@ hamadevelop.me/http3/?fbclid=IwAR2JbkddmaZPnhZyRhdp9Y-yaVZxrtooaAVba_dW-j6vBMqjJ
 - QUIC의 장점도 있지만 쉽게 도입할 수 없는 이유는
   - 헤더 필드까지 암호화 하게 되어 헤더의 정보를 사용하는 ISP나 중계회사들은 도입을 주저한다.
   - QUIC는 패킷별로 암호화 한다. TLS-TCP에서 패킷을 묶어서 암호화 하는것 보다 더 큰 리소스 소모를 불러온다.
+
+
+### https
+- SSL(Secure Sockets Layer)이라는 보안 계층이 TCP 전송계층의 위로 올라가서 보안이 보장된 통신을 하는 프로토콜입니다.
+- SSL 암호화 통신은 공개키 암호화 방식으로 개인키는 서버를 운영하는 쪽에서 가지고 공개키는 CA(Certificate Authority)라는 인증 기업에서 관리합니다.
