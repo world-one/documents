@@ -1,0 +1,22 @@
+### [console](https://developer.mozilla.org/ko/docs/Web/API/console)
+
+- assert
+- clear
+- count
+- countReset
+- debug
+- dir
+- dirxml
+- error
+- group
+- groupCollapsed
+- groupEnd
+- info
+- log
+- profile
+- profileEnd
+- table
+- timeEnd
+- timestamp
+- trace
+- warn
