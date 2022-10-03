@@ -47,3 +47,17 @@ $ git --version
 `git status`를 하니 rebase를 진행중이라는 메시지가 떠서 잠깐 삽질..   
 rebase에 대한 이해가 좀 부족했음,
 `git rebase --abort`로 되돌린 후 관련 메시지는 사라짐
+
+### git commit 후에  author 변경
+- local user를 제대로 설정하지 않아 global 유저로 author name이 들어간 경우 수정 방법
+```
+// 원하는 커밋의 위치를 찾아서 아래와 같이 입력
+git rebase -i HEAD~3
+// vi 에디터에서 pick을 e로 바꾼 후 wq로 종료하여 editor 모드로 들어간다.
+
+// 변경할 author를 입력해준다.
+git commit --amend --author="world-one <gamil.com>"
+
+git rebase --continue
+git push origin main --force
+```
