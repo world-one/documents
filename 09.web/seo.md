@@ -3,7 +3,7 @@
 - [구글 기본 가이드](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko)
 - [트위터 카드 마크업 태그](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup)
 - [네이버 가이드](https://searchadvisor.naver.com/guide)
-
+- [OG 공식문서](https://ogp.me/)
 
 ```
 <title>{title}</title>
